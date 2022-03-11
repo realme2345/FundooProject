@@ -1,0 +1,117 @@
+.Components{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1px;
+    height: 70%;
+    width: 60%;
+    margin: auto;
+    border: 50px solid white;
+
+}
+.Containing{
+    height: 145%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 2px solid rgb(206, 201, 201);
+}
+.F{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    font: normal normal bold 24px/37px Roboto;
+    color:rgb(34, 88, 238);
+    align-items: center;
+    text-align: row;
+    margin-top: 20px;
+}
+.U{
+    color: red;
+}
+.N{
+  color:yellow;
+}
+.D{
+    color:rgb(34, 88, 238);
+}
+.O{
+    color:green;
+}
+.o{
+    color: red;
+}
+.Sign{
+   text-align: center;
+   font-size: medium;
+   color: black;
+   font: normal normal  24px/37px Roboto;
+}
+.form{
+    font-size: medium;
+}
+.Email{
+    font: normal normal bold 17px/10px Roboto;
+    width: 390px;
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+}
+.Password{
+    font: normal normal bold 17px/10px Roboto;
+    width: 390px;
+    margin: 10px;
+    margin-top: 1px;
+    padding: 10px;
+    text-align: left;
+}
+.Link{
+    color: rgb(69, 101, 243);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    margin:left;
+    margin-bottom: 50px;
+
+}
+.Para{
+    display: flex;
+   text-align: left;
+   font-size: medium;
+   color: black;
+   border: 10px;
+   margin: 1px;
+   font: normal normal  14px/37px Roboto;
+   text-align: justify;
+}
+.Learn{
+    border: 10px;
+    color: rgb(69, 101, 243);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: medium;
+    margin-bottom: 90px;
+}
+.button{
+    position: relative;
+    background-color:blue;
+    color: white;
+    width: 70px;
+    bottom: 20px;
+    height: 35px;
+    margin: 1px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-left:auto;
+}
+.Create{
+    border: 10px;
+    color: rgb(69, 101, 243);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: medium;
+}

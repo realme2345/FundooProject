@@ -1,0 +1,35 @@
+<div class=Components>
+    <div class="Containing">
+        <div class="F">
+            <span class="f">F</span><span class="U">u</span>
+            <span class="N">n</span>
+            <span class="D">d</span>
+            <span class="O">o</span>
+            <span class="o">o</span>
+        </div>
+        <div class="Sign">Sign in</div>
+        <div class="form">Use your Fundoo Account</div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="Email" fxLayout="column" fxLayoutAlign="stretch">
+                <mat-form-field appearance="outline">
+                    <mat-label>UserName</mat-label>
+                    <input matInput placeholder="UserName"formControlName="email" >
+                    <mat-error>Enter your email</mat-error>
+                </mat-form-field>
+                <div class="Link" style="cursor: pointer;" routerLink="/forgotemail">Forgot email?</div>
+                <!-- <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="password" formControlName="password">
+                    <mat-error>Enter your password</mat-error>
+                </mat-form-field> -->
+                <!-- <div class="Link" style="cursor: pointer;" routerLink="/forgotpassword">Forgot password?</div> -->
+                <div class="Para">
+                    <p>Not your computer? Use Guest mode to sign in privately.</p>
+                </div>
+                <div class="Learn"><a target="">Learn more</a></div>
+                <div class="Create" style="cursor: pointer;" routerLink="/register">Create account</div>
+                <button type="submit" class="button">Next</button>
+            </div>
+        </form>
+    </div>
+</div>
