@@ -1,0 +1,66 @@
+<div class="Component">
+    <div class="Container">
+        <div class="row-content" fxLayout="column" fxLayoutAlign="space-between left">
+            <div class="F">
+                <span class="f">F</span>
+                <span class="U">u</span>
+                <span class="N">n</span>
+                <span class="D">d</span>
+                <span class="O">o</span>
+                <span class="O">o</span>
+            </div>
+            <div class="form-head">Create Your Fundoo Account </div>
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="Name" fxLayout="row" fxLayoutAlign="space-between center">
+                <mat-form-field appearance="outline">
+                    <mat-label>FirstName</mat-label>
+                    <input matInput placeholder="FirstName" formControlName="firstName" >
+                    <mat-error>Enter your firstName</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>LasstName</mat-label>
+                    <input matInput placeholder="LastName" formControlName="lastName">
+                    <mat-error>Enter your lastName</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="Email" fxLayout="column" fxLayoutAlign="stretch">
+                <mat-form-field appearance="outline">
+                    <mat-label>UserName</mat-label>
+                    <input matInput placeholder="UserName" formControlName="email">
+                    <mat-hint>you can use letter,number & peroids</mat-hint>
+                    <mat-error>Enter your email</mat-error>
+                </mat-form-field>
+                <div class="Hyper">
+                    <a>Use my current address instead</a>
+                </div>
+            </div>
+            <div class="Name" fxLayout="row" fxLayoutAlign="space-between center">
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password" formControlName="password">
+                    <mat-hint>Use 8 or more characters with</mat-hint>
+                    <mat-error>Enter your password</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Confirm</mat-label>
+                    <input matInput placeholder="Confirm" formControlName="confirmPassword">
+                    <mat-hint>mix letter,num,special char</mat-hint>
+                    <mat-error>Enter your confirmPassword</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <input type="checkbox" ng-model="all"> ShowPassword<br><br>
+            </div>
+            <div>
+                <div class="Sign" style="cursor: pointer;" routerLink="/login">Sign in Instead</div>
+            </div>
+            <button type="submit" class="Button">Next</button>
+            </form>
+        </div>
+        <div class="account">
+            <img src="../../../assets/account.svg" alt="">
+            <mat-hint>One account. All of Fundoo</mat-hint>
+            <mat-hint> Working for you</mat-hint>
+        </div>
+    </div>
+</div>
