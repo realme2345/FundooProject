@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
         password:this.registerForm.value.password,
         service:this.registerForm.value.service
       }
-      this.user.registration(data).subscribe((response:any)=>{
+      this.user.loginpage(data).subscribe((response:any)=>{
         console.log("msg",response);
       })
     }
@@ -39,7 +39,6 @@ export class LoginComponent implements OnInit {
       console.log("Enter valid data");
     }
   }
-
 }
 
 
