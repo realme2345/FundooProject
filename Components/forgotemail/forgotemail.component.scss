@@ -1,0 +1,78 @@
+.Components{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1px;
+    height: 90%;
+    width: 65%;
+    margin: auto;
+    border: 50px solid white;
+
+}
+.Containing{
+    height: 150%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 2px solid rgb(189, 181, 181);
+}
+.F{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    font: normal normal bold 24px/37px Roboto;
+    color:rgb(34, 88, 238);
+    align-items: center;
+    text-align: row;
+    margin-top: 35px;
+}
+.U{
+    color: red;
+}
+.N{
+  color:yellow;
+}
+.D{
+    color:rgb(34, 88, 238);
+}
+.O{
+    color:green;
+}
+.o{
+    color: red;
+}
+.Sign{
+   text-align: center;
+   font-size: medium;
+   color: black;
+   margin-bottom: 20px;
+   font: normal normal  24px/37px Roboto;
+}
+.form{
+    font-size: medium;
+}
+.Email{
+    font: normal normal bold 18px/10px Roboto;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.button{
+    // position: relative;
+    background-color:blue;
+    color: white;
+    width: 60px;
+    bottom: 25px;
+    height: 35px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-left:350px;
+    margin-right: 35px;
+}

@@ -1,0 +1,23 @@
+<div class=Components>
+    <div class="Containing">
+        <div class="F">
+            <span class="f">F</span><span class="U">u</span>
+            <span class="N">n</span>
+            <span class="D">d</span>
+            <span class="O">o</span>
+            <span class="o">o</span>
+        </div>
+        <div class="Sign">Find your email</div>
+        <div class="form">Enter your recovery email</div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="Email" fxLayout="column" fxLayoutAlign="stretch">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+                <mat-error>Enter your email</mat-error>
+            </mat-form-field>
+        </div>
+        <button type="submit" class="button">Next</button>
+        </form>
+    </div>
+</div>
