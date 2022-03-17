@@ -1,0 +1,12 @@
+<div fxLayout="row">
+    <div class="Dispaly" *ngFor="let note of childMessage">
+        <p class="example-app-name" (click)="showDialog(note)">
+            {{note.title}}
+            <mat-icon class="pin" style="cursor: pointer;">push_pin</mat-icon>
+        </p>
+        <p class="example-app" (click)="showDialog(note)">{{note.description}}</p>
+        <div class="Icons">
+            <app-iconscomponents></app-iconscomponents>
+        </div>
+    </div>
+</div>
