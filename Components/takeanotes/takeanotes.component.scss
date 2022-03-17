@@ -1,0 +1,47 @@
+.Title{
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 350px;
+    margin-bottom: 50px;
+    padding: 10px 100px 7px 10px;
+    border: 2px solid rgb(206, 201, 201);
+    font-size: medium;
+}
+.pin{
+    margin: 10%;
+    margin-left: 450px;
+}
+.Icons{
+    margin-left: 140px;
+}
+.icons{
+    padding: 0px 7px 0px 20px;
+}
+.Form{
+    align-items: center;
+    width:100%;
+    border:none;
+    outline:none;
+    padding: 0px 0px 10px 0px ;
+    background-color:rgba(255, 255, 255, 0.418);
+}
+.Input{
+    font-size:medium;
+    padding: 2px 0px 5px 0px ;
+}
+.pin{
+    margin:auto;
+}
+.button{
+    width: 20%;
+    margin-left: 130px;
+    border-radius: 20px;
+    height: 70%;
+    font-size: medium;
+}
+

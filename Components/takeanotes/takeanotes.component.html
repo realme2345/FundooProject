@@ -1,0 +1,30 @@
+<div class="Title">
+    <div class="Input" fxLayout="column" fxLayoutAlign="stretch">
+        <form [formGroup]="NoteValue" (ngSubmit)="onSubmit()">
+            <div class="Input" fxLayout="row" *ngIf="isShow">
+                <input type="text" class="Form" placeholder="Title" formControlName="title">
+                <mat-icon class="pin" style="cursor:pointer;">push_pin</mat-icon>
+            </div>
+            <div class="Input" fxLayout="row">
+                <input type="text"   class="Form" *ngIf="!isShow || isShow" placeholder="Take a note" (click)="show()" formControlName="description">
+            <div class="Icons" fxLayout="row">
+                <div class="icons" *ngIf="!isShow" style="cursor: pointer;">
+                    <img width=20px src="../../../assets/download.e.svg"/>
+                </div>
+                <div class="icons" *ngIf="!isShow" style="cursor: pointer;">
+                    <img width=20px src="../../../assets/brush_black_24dp.svg"/>
+                </div>
+                <div class="icons" *ngIf="!isShow" style="cursor: pointer;">
+                    <img width=20px src="../../../assets/insert_photo_black_24dp.svg"/>
+                </div>
+            </div>
+            </div>
+            <div *ngIf="isShow">
+                <div fxLayout="row">
+                    <app-iconscomponents></app-iconscomponents>
+                    <button type="submit"  style="cursor: pointer;" class="button">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
