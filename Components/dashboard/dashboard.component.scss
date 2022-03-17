@@ -1,0 +1,82 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .sidenav{
+    width:18%;
+    border:none;
+  }
+  .image{
+    width: 35px;
+    height: 50px;
+    padding: 0px 10px 0px 10px;
+  }
+  .Notes:hover{
+    background-color:rgb(241, 241, 238);
+  }
+  .Notes:focus {
+    background-color: rgb(250, 218, 186);
+}
+  .Notes{
+    background-color: white;
+    border-radius: 50px;
+    padding: 2px 0px 2px 0px;
+    width: 60%;
+  }
+  .search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    height: 55%;
+    background-color: rgba(245, 248, 248, 0.959);
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    border-radius: 7px;
+    margin-right: 20px;
+  }
+  .icons{
+    margin: 25px 10px;
+    align-items: center;
+    padding-top: 10px;
+    padding: 0px 10px 0px 10px;
+  }
+  .icon{
+    margin: 25px 10px;
+    align-items: center;
+    padding-top: 2px;
+    margin-left: 110px;
+  }
+  
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 5;
+  }
+  .example-toolbar{
+    background-color: white;
+    color: black;
+  }
+  h1.example-app-name {
+    margin-left: 8px;
+    width:15%
+  }
+  .example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+  
+  .example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
